@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-
-    <title>Weather APP</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="card">
         <div class="card-body">
+          <div class="row">
+            <div class="col">Kyiv</div>
+            <div class="col">Warsaw</div>
+            <div class="col">Bratislava</div>
+            <div class="col">Prague</div>
+          </div>
           <form id="search-city" class="city">
             <input
               type="text"
@@ -30,28 +36,22 @@
             <input type="submit" class="btn btn-success" value="Search" />
             <button type="submit" class="btn btn-primary">Current</button>
           </form>
-          <h1 class="kyiv" id="city-change">Kyiv</h1>
-          <div class="row justify-content-evenly">
-            <div class="col-6">
-          <ul>
-            <li><div id="current-day-kyiv">Sunday 14:30</div></li>
-            <li><div id="city-description">Partly cloudy</div></li>
-          </ul>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="partly cloudy"
-              />
+          <div class="kyiv-weather">
+            <h1 class="kyiv" id="city-change">Kyiv</h1>
+            <div class="sunday-kyiv">
+              <div id="current-day-kyiv">Sunday 14:30</div>
+              <div id="city-description">Clear</div>
+            </div>
+            <div class="temp-kyiv-sun">
               <span id="temp-change">19</span>
               <a href="#" id="celsius-link">°C</a><span class="slash">|</span>
               <a href="#" id="fahrenheit-link">°F</a>
             </div>
-          
-            <div class="col-6">
-              <ul>
-                <li><div id="city-humidity">Humidity: 32%</div></li>
-                <li><div id="city-wind">Wind: 5km/h</div></li>
-              </ul>
-            </div>
+          </div>
+          <div class="emoji-kyiv-sun">☀</div>
+          <div class="windy-kyiv-sun">
+            <div id="city-humidity">Humidity: 32%</div>
+            <div id="city-wind">Wind: 5km/h</div>
           </div>
           <div class="weather-rows">
             <div class="row days">
@@ -84,16 +84,15 @@
           </div>
         </div>
       </div>
-      <small class="author">
+      <div class="author">
         <a
-          href="https://github.com/Tasha852209/Vanilla-Weather-App"
-          target="_blank"
+          class="source-code"
+          href="https://github.com/Tasha852209/my-awesome-weather-app/"
           >Open-source code</a
-        >
-        by Tetiana Dub
-      </small>
+        ><span> by Tetiana Dub</span>
+      </div>
     </div>
 
-    <script src="src/index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
