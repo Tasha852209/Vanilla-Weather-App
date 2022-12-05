@@ -16,7 +16,82 @@
   </head>
   <body>
     <div class="container">
-      
+      <div class="card">
+        <div class="card-body">
+          <form id="search-city" class="city">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter a city"
+              autofocus="on"
+              autocomplete="off"
+              id="city-text-input"
+            />
+            <input type="submit" class="btn btn-success" value="Search" />
+            <button type="submit" class="btn btn-primary">Current</button>
+          </form>
+          <h1 class="kyiv" id="city-change">Kyiv</h1>
+          <div class="row justify-content-evenly">
+            <div class="col-6">
+          <ul>
+            <li><div id="current-day-kyiv">Sunday 14:30</div></li>
+            <li><div id="city-description">Partly cloudy</div></li>
+          </ul>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="partly cloudy"
+              />
+              <span id="temp-change">19</span>
+              <a href="#" id="celsius-link">°C</a><span class="slash">|</span>
+              <a href="#" id="fahrenheit-link">°F</a>
+            </div>
+          
+            <div class="col-6">
+              <ul>
+                <li><div id="city-humidity">Humidity: 32%</div></li>
+                <li><div id="city-wind">Wind: 5km/h</div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-rows">
+            <div class="row days">
+              <div class="col">
+                Mon
+                <div class="col emoji">☀</div>
+                <div class="col">21°</div>
+              </div>
+              <div class="col">
+                Tue
+                <div class="col emoji">⛅</div>
+                <div class="col">19°</div>
+              </div>
+              <div class="col">
+                Wed
+                <div class="col emoji">☁</div>
+                <div class="col">18°</div>
+              </div>
+              <div class="col">
+                Thu
+                <div class="col emoji">☀</div>
+                <div class="col">20°</div>
+              </div>
+              <div class="col">
+                Fri
+                <div class="col emoji">⛅</div>
+                <div class="col fri">18°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small class="author">
+        <a
+          href="https://github.com/Tasha852209/Vanilla-Weather-App"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Tetiana Dub
+      </small>
     </div>
 
     <script src="src/index.js"></script>

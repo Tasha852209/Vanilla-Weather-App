@@ -1,0 +1,104 @@
+.card {
+  max-width: 650px;
+  margin: 0 auto;
+  height: 550px;
+  top: 50px;
+  background: linear-gradient(#84def0, #a0f096);
+  box-shadow: 5px 5px 10px 10px rgba(59, 59, 59, 0.1);
+  display: block;
+  padding: 20px;
+}
+.row {
+  width: 70%;
+  line-height: 2;
+  position: relative;
+  left: 20px;
+  top: -12px;
+  text-align: center;
+}
+.city {
+  position: relative;
+  left: 18px;
+}
+.form-control {
+  max-width: 68%;
+  display: inline;
+  position: relative;
+  top: 2px;
+}
+.kyiv-weather {
+  position: relative;
+  left: 18px;
+  top: 15px;
+}
+.kyiv {
+  font-size: 50px;
+  font-weight: bold;
+}
+.sunday-kyiv {
+  font-size: 24px;
+}
+.temp-kyiv-sun {
+  font-size: 50px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.emoji-kyiv-sun {
+  font-size: 150px;
+  position: relative;
+  top: -160px;
+  left: 150px;
+  display: inline;
+  padding: 0px auto;
+}
+.windy-kyiv-sun {
+  position: relative;
+  left: 450px;
+  top: -350px;
+  font-size: 19px;
+}
+.weather-rows {
+  position: relative;
+
+  font-size: 25px;
+  width: 120%;
+  right: 22px;
+  text-align: center;
+}
+.emoji {
+  font-size: 35px;
+}
+#celsius-link,
+#fahrenheit-link, .slash {
+  padding: 0;
+  margin: 0;
+font-size: 20px;
+  position: relative;
+  top: -20px;
+  text-decoration: none;
+}
+.source-code {
+  text-decoration: none;
+  display: inline;
+}
+.author {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  left: 330px;
+  top: 60px;
+}
+
+
+li {
+  list-style: none;
+  font-weight: 500;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.search-city {
+  display: inline;
+}
