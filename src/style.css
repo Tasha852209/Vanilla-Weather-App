@@ -50,21 +50,14 @@
   display: inline;
   padding: 0px auto;
 }
-.windy-kyiv-sun {
-  position: relative;
-  left: 450px;
-  top: -350px;
-  font-size: 19px;
-}
+
 .weather-rows {
   width: 100%;
   line-height: 2;
   position: relative;
   top: 60px;
-
   text-align: center;
   font-size: 25px;
-  
   right: 22px;
 }
 
