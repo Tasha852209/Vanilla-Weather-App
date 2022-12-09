@@ -86,3 +86,6 @@
   left: 330px;
   top: 60px;
 }
+#city-description:first-letter {
+ text-transform: capitalize;
+}
