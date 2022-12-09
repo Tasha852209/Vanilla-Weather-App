@@ -16,10 +16,6 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          
-          </div>
           <form id="search-city" class="city">
             <input
               type="text"
@@ -32,22 +28,28 @@
             <input type="submit" class="btn btn-success" value="Search" />
             <button type="submit" class="btn btn-primary">Current</button>
           </form>
-          <div class="kyiv-weather">
-            <h1 class="kyiv" id="city-change">Kyiv</h1>
-            <div class="sunday-kyiv">
-              <div id="current-day">Sunday 14:30</div>
-              <div id="city-description">Clear</div>
-            </div>
-            <div class="temp-kyiv-sun">
+          <h1 class="kyiv" id="city-change">Kyiv</h1>
+          <div class="row" id="current-city-temp">
+            <div class="col">
+          <ul>
+            <li><div id="current-day-kyiv">Last updated: Sunday 14:30</div></li>
+            <li><div id="city-description">Partly cloudy</div></li>
+          </ul>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="partly cloudy"
+              />
               <span id="temp-change">19</span>
               <a href="#" id="celsius-link">°C</a><span class="slash">|</span>
               <a href="#" id="fahrenheit-link">°F</a>
             </div>
-          </div>
-          <div class="emoji-kyiv-sun">☀</div>
-          <div class="windy-kyiv-sun">
-            <div id="city-humidity">Humidity: 32%</div>
-            <div id="city-wind">Wind: 5km/h</div>
+          
+            <div class="col">
+              <ul>
+                <li><div id="city-humidity">Humidity: 32%</div></li>
+                <li><div id="city-wind">Wind: 5km/h</div></li>
+              </ul>
+            </div>
           </div>
           <div class="weather-rows">
             <div class="row days">
@@ -78,7 +80,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       <div class="author">
         <a
@@ -87,8 +88,6 @@
           >Open-source code</a
         ><span> by Tetiana Dub</span>
       </div>
-    </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>

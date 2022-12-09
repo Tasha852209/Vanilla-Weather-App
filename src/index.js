@@ -52,6 +52,13 @@ function displayWeather(response) {
   let cityWind = document.querySelector("#city-wind");
   let windy = Math.round(response.data.wind.speed);
   cityWind.innerHTML = `Wind: ${windy} km/h`;
+   iconElement.setAttribute(
+     "src",
+     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+   );
+   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+   getForecast(response.data.coord);
 }
 
 function getCurrentCity(position) {
