@@ -1,8 +1,12 @@
+body{
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .container {
   max-width: 650px;
   margin: 0 auto;
   height: 550px;
-  top: 50px;
+  top: 20px;
   background: linear-gradient(#84def0, #a0f096);
   box-shadow: 5px 5px 10px 10px rgba(59, 59, 59, 0.1);
   display: block;
@@ -11,7 +15,7 @@
   border-radius: 15px;
 }
 #current-city-temp{
- font-size: larger;
+ font-size: 35;
   top: 15px;
   margin:0 0 0 10px;
 }
@@ -48,11 +52,12 @@
   width: 100%;
   line-height: 2;
   position: relative;
-  top: 60px;
+  top: 55px;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   right: 22px;
   left: 0;
+  font-weight: 450;
 }
 
 .icon{
