@@ -1,30 +1,31 @@
-let now = new Date();
+function formatDate(date) {
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
-let currentDayKyiv = document.querySelector("#current-day");
-let hours = now.getHours();
-if (hours === 0) {
-  hours = 12;
-}
-if (hours > 0 && hours < 10) {
-  hours = `0${hours}`;
-}
+  let dayIndex = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[dayIndex];
 
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
+let dateElement = document.querySelector("#current-day");
+let currentTime = new Date();
+dateElement.innerHTML = formatDate(currentTime);
 
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-currentDayKyiv.innerHTML = `${day} ${hours}:${minutes}`;
 
 function showCity(event) {
   let key = "f99a73f91a669f404989b1c8a439ac00";
@@ -52,13 +53,13 @@ function displayWeather(response) {
   let cityWind = document.querySelector("#city-wind");
   let windy = Math.round(response.data.wind.speed);
   cityWind.innerHTML = `Wind: ${windy} km/h`;
-   iconElement.setAttribute(
-     "src",
-     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-   );
-   iconElement.setAttribute("alt", response.data.weather[0].description);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
-   getForecast(response.data.coord);
+  getForecast(response.data.coord);
 }
 
 function getCurrentCity(position) {
