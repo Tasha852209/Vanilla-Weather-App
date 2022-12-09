@@ -26,7 +26,6 @@ let dateElement = document.querySelector("#current-day");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-
 function showCity(event) {
   let key = "f99a73f91a669f404989b1c8a439ac00";
   event.preventDefault();
@@ -53,13 +52,11 @@ function displayWeather(response) {
   let cityWind = document.querySelector("#city-wind");
   let windy = Math.round(response.data.wind.speed);
   cityWind.innerHTML = `Wind: ${windy} km/h`;
+  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-    );
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-  getForecast(response.data.coord);
 }
 
 function getCurrentCity(position) {
