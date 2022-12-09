@@ -11,7 +11,9 @@
   border-radius: 15px;
 }
 #current-city-temp{
-  padding: 0;
+  
+ font-size: larger;
+  top: 15px;
 }
 
 .city {
@@ -24,14 +26,13 @@
   position: relative;
   top: 2px;
 }
-.kyiv-weather {
-  position: relative;
-  left: 18px;
-  top: 15px;
-}
+
 .kyiv {
   font-size: 50px;
   font-weight: bold;
+  position: relative;
+  top: 15px;
+  margin: 0 0 30px 0;
 }
 .sunday-kyiv {
   font-size: 24px;
@@ -66,9 +67,13 @@
   
   right: 22px;
 }
-.emoji {
-  font-size: 35px;
+
+.icon{
+  margin:30px 0 0 0;
+  font-weight: 100px;
+  size: 50px;
 }
+
 #celsius-link,
 #fahrenheit-link, .slash {
   padding: 0;
@@ -86,8 +91,8 @@ font-size: 20px;
   margin: 0 auto;
   display: block;
   position: relative;
-  left: 330px;
-  top: 60px;
+  left: 230px;
+  top: 10px;
 }
 
 
@@ -102,4 +107,9 @@ ul{
 }
 .search-city {
   display: inline;
+}
+#current-unit-temp{
+  
+  font-weight: 600;
+  font-size: 50px;
 }
