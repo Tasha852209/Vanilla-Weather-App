@@ -38,7 +38,6 @@ let form = document.querySelector("#search-city");
 form.addEventListener("submit", showCity);
 
 function displayWeather(response) {
-  console.log(response.data);
   document.querySelector("#city-change").innerHTML = response.data.name;
   let cityDescription = document.querySelector("#city-description");
   let description = response.data.weather[0].description;
