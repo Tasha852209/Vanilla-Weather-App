@@ -64,7 +64,8 @@ body{
   size: 50px;
 }
 
-.celsius{
+#celsius-link,
+#fahrenheit-link, .slash{
   padding: 0;
   margin: 0;
 font-size: 20px;
@@ -104,4 +105,12 @@ ul{
 }
 #win-hum{
   padding-left: 80px;
+}
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }
