@@ -39,7 +39,9 @@ body{
   margin: 0 0 30px 0;
   left: 18px;
 }
-
+#city-description:first-letter {
+ text-transform: capitalize;
+}
 
 .weather-rows {
   width: 100%;
