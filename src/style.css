@@ -43,17 +43,7 @@ body{
  text-transform: capitalize;
 }
 
-.weather-rows {
-  width: 100%;
-  line-height: 2;
-  position: relative;
-  top: 55px;
-  text-align: center;
-  font-size: 22px;
-  right: 22px;
-  left: 0;
-  font-weight: 450;
-}
+
 
 #icon{
   margin:30px 0 0 0;
@@ -110,4 +100,24 @@ ul{
 
 .active:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 80px;
+  position: relative;
+  left: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 20px;
 }
