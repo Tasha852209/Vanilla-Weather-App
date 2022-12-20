@@ -154,3 +154,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 
 displayForecast();
+displayWeather();
